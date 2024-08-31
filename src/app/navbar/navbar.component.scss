@@ -1,0 +1,13 @@
+.navbar-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .navbar-container { 
+        grid-template-columns: 1fr;
+     }
+
+}

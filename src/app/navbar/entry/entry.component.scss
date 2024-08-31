@@ -1,0 +1,23 @@
+@import "../../shared/colors";
+
+.entry-container a {
+    text-decoration: none;
+    color: $dark-red;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+        color: $dark-orange;
+    }
+}
+
+.signUp {
+    border: 2px solid $dark-red;
+    border-radius: 50px;
+
+    &:hover {
+        border: 2px solid $dark-orange;
+        transition: color 0.2s ease-in-out;
+    }
+}

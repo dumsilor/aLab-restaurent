@@ -1,0 +1,21 @@
+@import "../../shared/colors.scss";
+
+a {
+    color: $dark-blue;
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 700;
+    transition: color 0.22s ease-in-out;
+
+    &:hover{
+        color: $dark-orange;
+    }
+
+    &:active {
+        color: darken($dark-orange, 50%);
+        }
+
+    &.active{
+        color: $dark-red;
+    }
+}
