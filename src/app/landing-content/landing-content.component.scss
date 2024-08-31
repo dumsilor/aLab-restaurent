@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import '../shared/colors';
+
+.landing-content-container { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.landing-img{
+    position: relative;
+}
+
+img {
+    height: 490px;
+    transform: rotate(20deg);
+    position: absolute;
+    left: 200px;
+    top:25px;
+}
+
+.landing-text{
+    font-family: "Original Surfer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    padding: 10rem 0 0 10rem;
+    color: $peach;
+}
