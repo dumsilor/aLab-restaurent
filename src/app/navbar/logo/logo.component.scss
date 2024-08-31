@@ -1,0 +1,45 @@
+// shorthand: top right bottom left
+
+@import "../../shared/colors";
+
+.logo-container {
+    display: flex;
+    padding: 1.5rem 0 0 3rem;
+}
+
+img {
+    height: 65px;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.dark-color {
+    color: $dark-blue;
+    font-weight: 700;
+}
+
+.orange-color {
+    color: $dark-orange;
+    font-weight: 750;
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 0 0 1rem;
+    }
+
+    img {
+        height: 50px;
+    }
+
+    .logo-name {
+        padding-left: 0;
+    }
+}
+
