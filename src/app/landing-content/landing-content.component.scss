@@ -6,7 +6,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.landing-img{
+.landing-img {
     position: relative;
 }
 
@@ -18,11 +18,40 @@ img {
     top:25px;
 }
 
-.landing-text{
+.landing-text {
     font-family: "Original Surfer", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 80px;
     padding: 10rem 0 0 10rem;
     color: $peach;
+}
+
+@media screen and (max-width: 768px){
+    .landing-content-container {
+        grid-template-columns: 1fr;
+    }
+
+    .landing-text {
+        padding: 1rem 3.5rem 0 3.5rem;
+        font-size: 60px;
+        text-align: center;
+    }
+    img {
+        height: 245px;
+        transform: none;
+        left: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .landing-text {
+        padding: 1rem 1.5rem 0 1.5rem;
+        font-size: 40px;
+    }
+    img {
+        height: 200px;
+        transform: none;
+        left: 125px;
+    }
 }

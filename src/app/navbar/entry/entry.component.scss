@@ -21,3 +21,9 @@
         transition: color 0.2s ease-in-out;
     }
 }
+
+@media screen and (max-width: 768px){
+    .entry-container {
+        display: none;
+    }
+}

@@ -5,9 +5,16 @@
     align-items: center;
 }
 
+.toglleMenu-container {
+    display: block;
+}
+
 @media screen and (max-width: 768px){
     .navbar-container { 
         grid-template-columns: 1fr;
      }
+}
 
+@media screen and (max-width: 480px) {
+    
 }
