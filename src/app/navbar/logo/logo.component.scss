@@ -27,6 +27,12 @@ img {
     font-weight: 750;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    span {
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 768px) {
     .logo-container {
         flex-direction: column;
