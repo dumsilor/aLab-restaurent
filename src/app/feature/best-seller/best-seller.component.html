@@ -1,0 +1,11 @@
+<div class="best-seller-container">
+    <header>
+        Best <span>Delivered</span> Categories
+    </header>
+    <div class="img">
+        <img src="assets/images/best-seller/gojo.png" alt="Gojo">
+    </div>
+    <div class="best-seller-items" *ngFor="let item of sellerItems">
+        <app-item [sellerItem]="item"></app-item>
+    </div>
+</div>
