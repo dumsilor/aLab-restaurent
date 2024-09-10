@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-offer',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './offer.component.scss'
 })
 export class OfferComponent {
-
+  @Input() currentOffer!: {offerType: string, offerName: string, offerAmount: number, offerImgPath: string};
 }

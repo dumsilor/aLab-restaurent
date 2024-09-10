@@ -1,0 +1,23 @@
+.form-container {
+    position: absolute;
+    left: 45rem;
+    top: 11rem;
+    background-color: white;
+    padding: 10rem;
+    z-index: 11;
+    border-radius: 2%;
+}
+
+.formControl {
+    margin: 1rem 0;
+}
+
+input {
+    display: block;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}

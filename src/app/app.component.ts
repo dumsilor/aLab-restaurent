@@ -8,6 +8,7 @@ import { BestSellerComponent } from "./feature/best-seller/best-seller.component
 import { MenuComponent } from "./feature/menu/menu.component";
 import { FooterComponent } from "./feature/footer/footer.component";
 import { OffersComponent } from "./feature/offers/offers.component";
+import { UserEntryComponent } from "./feature/user-entry/user-entry.component";
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,8 @@ import { OffersComponent } from "./feature/offers/offers.component";
     BestSellerComponent,
     MenuComponent,
     FooterComponent,
-    OffersComponent
+    OffersComponent,
+    UserEntryComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

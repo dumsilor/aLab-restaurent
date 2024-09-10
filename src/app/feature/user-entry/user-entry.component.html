@@ -1,0 +1,29 @@
+<div class="form-container">
+  <div class="entry">
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+      <div class="userName formControl">
+        <label for="userName">User Name</label>
+        <input type="text" name="userName" id="userName" placeholder="Enter User Name" formControlName="username">
+      </div>
+      <div class="password formControl">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter Password" formControlName="password">
+        <span *ngIf="!signUpForm.get('password')?.valid && signUpForm.get('password')?.touched">Enter a valid Password</span>
+      </div>
+      <div class="signUp" *ngIf="!isLogInEnabled">
+        <div class="confirmPassword formControl">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Enter Password Again" formControlName="confirmPassword">
+          <div class="phoneNumbe formControl">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Phone Number" formControlName="phoneNumber">
+          </div>
+        </div>
+      </div>
+      <button>
+        {{ isLogInEnabled ? 'Log In' : 'Sign Up'}}</button>
+      <button (click)="changeState()"> Switch to
+        {{ isLogInEnabled ? "Sign Up" : "Log In" }}</button>
+    </form>
+  </div>
+</div>

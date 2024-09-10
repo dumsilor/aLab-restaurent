@@ -1,14 +1,19 @@
 @import "./shared/colors.scss";
+
 .backDrop {
-    background: rgba($light-orange,0.5);
+    background: rgba($light-orange, 0.5);
     height: 700px;
     width: 100vw;
     position: absolute;
     z-index: -1;
 }
 
-.best-seller{
+.best-seller {
     margin-top: 27rem;
+}
+
+app-user-entry {
+    display: none;
 }
 
 @media screen and (max-width: 480px) {
