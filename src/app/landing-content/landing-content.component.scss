@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 @import '../shared/colors';
 
-.landing-content-container { 
+.landing-content-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -15,7 +15,7 @@ img {
     transform: rotate(20deg);
     position: absolute;
     left: 200px;
-    top:25px;
+    top: 25px;
 }
 
 .landing-text {
@@ -27,7 +27,7 @@ img {
     color: $peach;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .landing-content-container {
         grid-template-columns: 1fr;
     }
@@ -36,7 +36,9 @@ img {
         padding: 1rem 3.5rem 0 3.5rem;
         font-size: 60px;
         text-align: center;
+        letter-spacing: 20px;
     }
+
     img {
         height: 245px;
         transform: none;
@@ -49,6 +51,7 @@ img {
         padding: 1rem 1.5rem 0 1.5rem;
         font-size: 40px;
     }
+
     img {
         height: 200px;
         transform: none;
@@ -56,33 +59,36 @@ img {
     }
 }
 
-@media screen and (min-width: 1281px) and (max-width: 1440px){
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
     .landing-text {
         font-size: 60px;
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1280px){
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
     .landing-text {
         font-size: 60px;
         padding-left: 6.5rem;
     }
-    img{
+
+    img {
         height: 450px;
         left: 150px;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    img{
+    img {
         height: 350px;
         left: 100px;
     }
+
     .landing-text {
         font-size: 40px;
         padding-left: 3rem;
         padding-top: 5rem;
     }
+
     .landing-content-container {
         margin-top: 5rem;
     }

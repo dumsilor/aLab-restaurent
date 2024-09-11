@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import "../../shared/colors.scss";
+
+
+.best-seller-container {
+    padding: 0 10rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    font-family: "Original Surfer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: $dark-blue;
+
+    & span {
+        color: $dark-orange;
+    }
+}
+
+img {
+    height: 150px;
+    border-radius: 10rem;
+}
+
+.best-seller-items {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}

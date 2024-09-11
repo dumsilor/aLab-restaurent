@@ -1,0 +1,51 @@
+@import "../../../shared/colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+.blob {
+    display: none;
+}
+
+img {
+    height: 20rem;
+    width: 17rem;
+    max-width: 17rem;
+    border-radius: 18px;
+    border: 7px solid $peach;
+}
+
+.name-container {
+    font-family: "Original Surfer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: $dark-blue;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.order-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+
+    & a {
+        text-decoration: none;
+        color: $dark-red;
+        font-weight: 500;
+    }
+
+    & i {
+        color: $dark-red;
+        font-weight: 800;
+        margin-left: 0.5rem;
+        transition: all 0.5s ease-in-out;
+
+    }
+}
+
+.order-link:hover {
+    i {
+        transform: translateX(10px);
+    }
+}
